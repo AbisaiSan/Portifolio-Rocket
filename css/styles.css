@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400;1,600&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  border:0;
+}
+body {
+  background: #282a36 ;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color:#fff;
+}
+header{
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  background: rgba(0, 0, 0, 0.233);
+}
+.links {
+  text-align: center;
+}
+.links a{
+  color:#ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 15px;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+.links a:hover {
+  color: #50fa7b;
+  transition: color 700ms;
+}
+#wrapper {
+text-align: center;
+padding: 25px;
+}
+#wrapper img {
+  border-radius: 50%;
+  border: 5px solid #50fa7b ;
+  width: 190px;
+  height:190px;
+  margin-bottom: 25px;
+}
+
+#wrapper h1{
+  font-size: 42px;
+  line-height: 52px;
+  font-weight:bold;
+}
+#wrapper h2 {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: normal;
+  opacity: 0.8;
+}
+#wrapper p{
+  max-width: 500px;
+  margin:10px auto;
+  font-size: 24px;
+  line-height: 34px;
+}
+#wrapper p a {
+  color:#50fa7b;
+}
+#links-footer a {
+  border-bottom: 1px solid #50fa7b;
+}
+
+/*=== CARDS ===*/
+.cards {
+  max-width: 800px;
+  margin:0 auto ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  background-color: #7159c1;
+}
+
+.card-img-container img {
+  width: 100%;
+}
+.card-content, 
+.card-info {
+  padding:24px;
+}
+.card-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-price {
+  background-color: #7159c1;
+  filter: brightness(90%);
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+/*===Modal===*/
+
+.modal-overlay {
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal {
+  background-color: #ffff;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close-modal {
+  color: #222;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/*===Modal.Active===*/
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top:5%;
+}
